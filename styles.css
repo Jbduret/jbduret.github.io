@@ -1,0 +1,254 @@
+/* Universal Styles */
+
+html {
+    font-family: 'Droid Serif', Serif;
+    font-size: 15px;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+}
+
+section {
+    padding: 2rem;
+}
+
+section h1 {
+    font-family: 'Roboto', Sans-Serif;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+#main-content {
+    position: relative;
+    top: 6rem; /* To offset for fixed header. */
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-color: #FFFFFF;
+}
+
+header .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+header .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header h1 {
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+header .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    padding-left: .75rem;
+    align-self: center;
+}
+
+.logo img {
+    width: 5%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+  
+nav li {
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    border-left: #C1C6C6 solid 1px;
+}
+
+nav li:nth-child(1) {
+    border-left: none;
+}
+
+nav a {
+    font-family: 'Roboto', Sans-Serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    vertical-align: center;
+    line-height: 1.6;
+}
+
+nav li:hover {
+    cursor: pointer;
+    background-color:#D3D3D3;
+}
+
+nav .follow {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
+
+/* Mission */
+
+#mission {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("resources/images/sky-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#mission h1, #mission h2, .quote {
+    color: #FFFFFF;
+}
+
+#mission h1, #mission h2 {
+    text-align: center;
+}
+
+#mission h2 {
+    align-self: self-start;
+    text-align: center;
+}
+
+#mission .quote {
+    margin-top: 10rem;
+    align-self: end;
+    width: 30%;
+    font-style: italic;
+}
+
+/* Products */
+
+#products {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#products h1 {
+    color: #FFFFFF;
+}
+
+.product-section {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-section .product {
+    height: 350px;
+    width: 300px;
+    margin: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+}
+
+.product-section .product img {
+    width: 250px;
+}
+
+.product:hover {
+    cursor: pointer;
+    background-color:#D3D3D3;
+}
+
+/* About us */
+
+#about-us {
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.character-section {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 1;
+    align-items: center;
+    border-left: #C1C6C6 solid 1px;
+}
+
+.feature:nth-child(1) {
+    border-left: none;
+}
+
+.feature .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.feature .content h2 {
+    margin: 3rem 0 0;
+}
+
+.profile {
+    height: 250px;
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    bottom: -6rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+footer h4 {
+    text-align: center;
+    margin: 1rem;
+}
+
+footer p {
+    margin: 1rem;
+    text-align: right;
+}
